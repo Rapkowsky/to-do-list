@@ -10,34 +10,47 @@
 		},
 	];
 
+	const addNewTask = (newTaskContent) => {
+		tasks.push({
+			content: newTaskContent,
+		});
+		render();
+	};
+
+	const removeTask = (taskIndex) => {
+		tasks.splice(taskIndex, 1);
+		render();
+	};
+
 	const render = () => {
 		let htmlText = "";
 
-		for (const ticket of tasks) {
+		for (const task of tasks) {
 			htmlText += `
-			<li ${ticket.done ? 'style="text-decoration: line-through"' : ""}>
-				${ticket.content}
+			<li ${task.done ? 'style="text-decoration: line-through"' : ""}>
+			<button class="js-remove">usuń</button>
+				${task.content}
 			</li>
 			`;
 		}
 		document.querySelector(".js-tasks").innerHTML = htmlText;
-	};
+		const removeButtons = document.querySelectorAll(".js-remove");
 
-	const addNewTask = (newTicketContent) => {
-		tasks.push({
-			content: newTicketContent,
+		removeButtons.forEach((removeButton, index) => {
+			removeButton.addEventListener("click", () => {
+				removeTask(index);
+			});
 		});
-		render();
 	};
 
 	const onFormSubmit = (event) => {
 		event.preventDefault();
 
-		const newTicketContent = document.querySelector(".js-newTask").value.trim();
-		if (newTicketContent === "") {
+		const newTaskContent = document.querySelector(".js-newTask").value.trim();
+		if (newTaskContent === "") {
 			return;
 		}
-		addNewTask(newTicketContent);
+		addNewTask(newTaskContent);
 	};
 
 	const init = () => {
