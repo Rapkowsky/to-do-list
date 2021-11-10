@@ -18,15 +18,8 @@
 	border-radius: 2px;
 	color: #fff;
 }
-.js-task {
-}
 .tasks__content--done {
 	text-decoration: line-through;
-}
-.js-toggleDone {
-}
-.tasks__button--done {
-	background-color: #1d8722;
 }
 .tasks__button--toggleDone {
 	background-color: #1d8722;
