@@ -11,10 +11,7 @@
 	padding: 10px;
 	border-bottom: 1px solid #e2e3e4;
 }
-.tasks__content {
-}
 .tasks__button {
-	background-color: #ef2e45;
 	border: none;
 	width: 30px;
 	height: 30px;
@@ -26,15 +23,26 @@
 .tasks__content--done {
 	text-decoration: line-through;
 }
+.js-toggleDone {
+}
 .tasks__button--done {
 	background-color: #1d8722;
 }
 .tasks__button--toggleDone {
-}
-.tasks__button--toggleDone {
-}
-.tasks__button--toggleDone {
-}
-.js-toggleDone {
 	background-color: #1d8722;
+}
+.tasks__button--toggleDone:hover {
+	filter: brightness(110%);
+}
+.tasks__button--toggleDone:active {
+	filter: brightness(120%);
+}
+.tasks__button--remove {
+	background-color: #ef2e45;
+}
+.tasks__button--remove:hover {
+	filter: brightness(110%);
+}
+.tasks__button--remove:active {
+	filter: brightness(120%);
 }
