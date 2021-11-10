@@ -1,4 +1,40 @@
 .tasks {
 	list-style: none;
 	margin: 0;
+	padding: 0;
+}
+.tasks__item {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-gap: 10px;
+	align-items: center;
+	padding: 10px;
+	border-bottom: 1px solid #e2e3e4;
+}
+.tasks__content {
+}
+.tasks__button {
+	background-color: #ef2e45;
+	border: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 2px;
+	color: #fff;
+}
+.js-task {
+}
+.tasks__content--done {
+	text-decoration: line-through;
+}
+.tasks__button--done {
+	background-color: #1d8722;
+}
+.tasks__button--toggleDone {
+}
+.tasks__button--toggleDone {
+}
+.tasks__button--toggleDone {
+}
+.js-toggleDone {
+	background-color: #1d8722;
 }
