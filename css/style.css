@@ -9,7 +9,6 @@ html {
 }
 
 body {
-	max-width: 1248px;
-	margin: 0 auto;
 	font-family: "Lato", sans-serif;
+	background-color: #f0f0f0;
 }

@@ -1,0 +1,15 @@
+.section {
+	max-width: 100%;
+	background-color: #fff;
+	margin: 10px 0;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	border-radius: 5px;
+}
+.section__header {
+	border-bottom: 1px solid #e2e3e4;
+	padding: 20px;
+	margin-bottom: 0;
+}
+.section__body {
+	padding: 20px;
+}

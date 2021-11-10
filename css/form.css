@@ -1,0 +1,32 @@
+.form {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-gap: 20px;
+}
+.form__input {
+	padding: 10px;
+	border: 1px solid #a1a4a7;
+	border-radius: 2px;
+}
+.form__button {
+	padding: 10px;
+	background-color: #007f8d;
+	color: #fff;
+	border: none;
+	border-radius: 2px;
+	transition: 0.2s ease-out;
+}
+.form__button:hover {
+	filter: brightness(120%);
+	transition: 0.2s ease-in;
+	transform: scale(1.05);
+}
+.form__button:active {
+	filter: brightness(140%);
+}
+
+@media (max-width: 760px) {
+	.form {
+		grid-template-columns: 1fr;
+	}
+}
