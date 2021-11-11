@@ -23,18 +23,24 @@
 }
 .tasks__button--toggleDone {
 	background-color: #1d8722;
+	transition: 0.15s ease-out;
 }
 .tasks__button--toggleDone:hover {
 	filter: brightness(110%);
+	transition: 0.15s ease-in;
+	transform: scale(1.1);
 }
 .tasks__button--toggleDone:active {
 	filter: brightness(120%);
 }
 .tasks__button--remove {
 	background-color: #ef2e45;
+	transition: 0.15s ease-out;
 }
 .tasks__button--remove:hover {
 	filter: brightness(110%);
+	transition: 0.15s ease-in;
+	transform: scale(1.1);
 }
 .tasks__button--remove:active {
 	filter: brightness(120%);

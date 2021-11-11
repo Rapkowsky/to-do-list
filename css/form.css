@@ -14,11 +14,11 @@
 	color: #fff;
 	border: none;
 	border-radius: 2px;
-	transition: 0.2s ease-out;
+	transition: 0.15s ease-out;
 }
 .form__button:hover {
 	filter: brightness(120%);
-	transition: 0.2s ease-in;
+	transition: 0.15s ease-in;
 	transform: scale(1.05);
 }
 .form__button:active {
