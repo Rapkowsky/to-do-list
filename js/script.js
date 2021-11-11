@@ -8,7 +8,7 @@
 		render();
 	};
 
-	const removeTask = (taskIndex) => {
+	const deleteTask = (taskIndex) => {
 		tasks.splice(taskIndex, 1);
 		render();
 	};
@@ -18,12 +18,12 @@
 		render();
 	};
 
-	const bindRemoveEvents = () => {
+	const assignRemoveEvents = () => {
 		const removeButtons = document.querySelectorAll(".js-remove");
 
 		removeButtons.forEach((removeButton, taskIndex) => {
 			removeButton.addEventListener("click", () => {
-				removeTask(taskIndex);
+				deleteTask(taskIndex);
 			});
 		});
 	};
@@ -39,10 +39,10 @@
 	};
 
 	const render = () => {
-		let htmlText = "";
+		let htmlTaskListContent = "";
 
 		for (const task of tasks) {
-			htmlText += `
+			htmlTaskListContent += `
 			<li class="tasks__item js-task">
 			<button class="tasks__button tasks__button--toggleDone js-toggleDone">				
 				${task.done ? "✔" : ""}
@@ -51,14 +51,14 @@
 				${task.done ? "tasks__content--done" : ""}">
 				${task.content}
 			</span>
-			<button class="tasks__button tasks__button--remove js-remove">🗑️
+			<button class="tasks__button tasks__button--remove js-remove">🗑
 			</button>
 			</li>
 			`;
 		}
-		document.querySelector(".js-tasks").innerHTML = htmlText;
+		document.querySelector(".js-tasks").innerHTML = htmlTaskListContent;
 
-		bindRemoveEvents();
+		assignRemoveEvents();
 		bindToggleDoneEvents();
 	};
 
