@@ -8,7 +8,7 @@ Possible actions to perform:
 
 - add task to the list
 - marking the task as done (with the possibility of unmarking it for redoing)
-- removing a task from the list 
+- removing a task from the list
 
 Forbidden characters - whitespace characters.
 
