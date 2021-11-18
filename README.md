@@ -1,5 +1,7 @@
 # Currency converter project
 
+![To-do list visualization](/images/to-do-list-img.png)
+
 ## Description
 
 To-do list for your everyday tasks.
